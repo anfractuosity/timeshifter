@@ -2,6 +2,11 @@
 
 Transmissions over time based covert channels across a network
 
+We created a system in order to transmit and receive data by modifying the time intervals between packets. 
+
+
+# setup
+
 On Ubuntu/Debian:
 
 ```
