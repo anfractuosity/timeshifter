@@ -21,7 +21,7 @@ sudo pacman -S libnetfilter_queue
 
 # example
 
-Setup iptables rules based on the example file provided.
+Setup iptables rules based on the example_rules_single_computer.sh file provided.
 
 *N.B. once you’ve activated these iptables rules, then packets will not be sent out from the computer until you run the program below.*
 
