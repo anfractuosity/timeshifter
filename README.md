@@ -19,4 +19,24 @@ On Arch:
 sudo pacman -S libnetfilter_queue
 ```
 
+# example
+
+Setup iptables rules based on the example file provided.
+
+*N.B. once you’ve activated these iptables rules, then packets will not be sent out from the computer until you run the program below.*
+
+Run the transmitter using:
+
+```
+echo "helloworld" | ./timeshifter 0 2000 3000
+```
+
+Run the reciever using:         
+
+```
+./timeshifter 1 2000 3000
+```
+
+Then ping a remote host, the transmitting packet's intervals will be modulated with your data, the pong replies will then be decoded by the reciever.
+
 Please see https://www.anfractuosity.com/projects/timeshifter/ for additional explaination
